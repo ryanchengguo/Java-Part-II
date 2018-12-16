@@ -16,3 +16,6 @@ public class Smileys {
         for (int i = 0; i < times; i++) {
             System.out.print(":)");
         }
+
+        System.out.println();
+    }
