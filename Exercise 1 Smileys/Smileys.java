@@ -25,3 +25,7 @@ public class Smileys {
          printWithSmileys("Method");
 
          printWithSmileys("Beerbottle");
+
+         printWithSmileys("Interface");
+    }
+}
