@@ -11,3 +11,8 @@ public class Smileys {
         }
         printSmiley(nSmileys);
     }
+
+    private static void printSmiley(int times) {
+        for (int i = 0; i < times; i++) {
+            System.out.print(":)");
+        }
