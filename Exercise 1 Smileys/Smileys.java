@@ -19,3 +19,7 @@ public class Smileys {
 
         System.out.println();
     }
+
+     public static void main(String[] args) {
+        // Test your method at least with the following
+         printWithSmileys("Method");
