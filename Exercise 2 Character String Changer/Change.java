@@ -10,4 +10,4 @@ public class Change {
     public String change(String characterString) {
         return characterString.replace(fromChar, toChar);
     }
-    
+}
