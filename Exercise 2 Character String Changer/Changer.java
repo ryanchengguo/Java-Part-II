@@ -15,3 +15,7 @@ public class Changer {
         for (Change changeItem : changeList) {
             characterString = changeItem.change(characterString);
         }
+
+        return characterString;
+    }
+}
