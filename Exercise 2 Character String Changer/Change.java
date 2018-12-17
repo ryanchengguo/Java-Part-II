@@ -6,3 +6,8 @@ public class Change {
         this.fromChar = fromCharacter;
         this.toChar = toCharacter;
     }
+
+    public String change(String characterString) {
+        return characterString.replace(fromChar, toChar);
+    }
+    
