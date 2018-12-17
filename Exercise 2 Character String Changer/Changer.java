@@ -10,3 +10,8 @@ public class Changer {
      public void addChange(Change change) {
         changeList.add(change);
     }
+
+    public String change(String characterString) {
+        for (Change changeItem : changeList) {
+            characterString = changeItem.change(characterString);
+        }
