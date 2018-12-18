@@ -6,3 +6,12 @@ public class Reader {
     public Reader() {
         scanner = new Scanner(System.in);
     }
+
+    public String readString() {
+        return scanner.nextLine();
+    }
+    
+    public int readInteger() {
+        return Integer.parseInt(scanner.nextLine());
+    }
+}
