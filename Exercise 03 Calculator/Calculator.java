@@ -23,3 +23,9 @@ public class Calculator {
         int sum = values[0] + values[1];
         System.out.println("sum of the values " + sum);
     }
+    
+    private void difference() {
+        int[] values = getValues();
+        int difference = values[0] - values[1];
+        System.out.println("difference of the values " + difference);
+    }
