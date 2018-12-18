@@ -39,3 +39,28 @@ public class Calculator {
     private void statistics() {
         System.out.println("Calculations done " + numOfCalculations);
     }
+
+    public void start() {
+        while (true) {
+            System.out.print("command: ");
+            String command = reader.readString();
+            
+            if (command.equals("end")) {
+                break;
+            }
+
+            if (command.equals("sum")) {
+                sum();
+                numOfCalculations++;
+            } else if (command.equals("difference")) {
+                difference();
+                numOfCalculations++;
+            } else if (command.equals("product")) {
+                product();
+                numOfCalculations++;
+            }
+        }
+
+        statistics();
+    }
+}
