@@ -17,3 +17,9 @@ public class Calculator {
         
         return values;
     }
+
+    private void sum() {
+        int[] values = getValues();
+        int sum = values[0] + values[1];
+        System.out.println("sum of the values " + sum);
+    }
