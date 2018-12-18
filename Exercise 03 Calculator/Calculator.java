@@ -29,3 +29,13 @@ public class Calculator {
         int difference = values[0] - values[1];
         System.out.println("difference of the values " + difference);
     }
+
+    private void product() {
+        int[] values = getValues();
+        int product = values[0] * values[1];
+        System.out.println("product of the values " + product);
+    }
+    
+    private void statistics() {
+        System.out.println("Calculations done " + numOfCalculations);
+    }
