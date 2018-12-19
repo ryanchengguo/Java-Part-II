@@ -25,3 +25,9 @@ public class Container {
         
         return totalWeight;
     }
+
+    public void printThings() {
+        for (Suitcase suitcase : suitcases) {
+            suitcase.printThings();
+        }
+    }
