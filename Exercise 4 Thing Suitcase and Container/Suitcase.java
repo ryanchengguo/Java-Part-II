@@ -22,3 +22,13 @@ public class Suitcase {
             System.out.println(thing);  // Automatically calls "toString()"
         }
     }
+
+    public int totalWeight() {
+        int totalWeight = 0;
+        
+        for (Thing thing : things) {
+            totalWeight += thing.getWeight();
+        }
+        
+        return totalWeight;
+    }
