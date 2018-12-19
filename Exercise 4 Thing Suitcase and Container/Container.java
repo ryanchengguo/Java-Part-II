@@ -31,3 +31,9 @@ public class Container {
             suitcase.printThings();
         }
     }
+
+    @Override
+    public String toString() {
+        return suitcases.size() + " suitcases (" + totalWeight() + " kg)";
+    }
+}
