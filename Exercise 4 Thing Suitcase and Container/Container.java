@@ -9,3 +9,9 @@ public class Container {
         this.maxWeight = maxWeight;
     }
     
+
+    public void addSuitcase(Suitcase suitcase) {
+        if (totalWeight() + suitcase.totalWeight() <= maxWeight) {
+            suitcases.add(suitcase);
+        }
+    }
