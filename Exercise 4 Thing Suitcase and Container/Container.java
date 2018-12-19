@@ -15,3 +15,13 @@ public class Container {
             suitcases.add(suitcase);
         }
     }
+
+    public int totalWeight() {
+        int totalWeight = 0;
+        
+        for (Suitcase suitcase : suitcases) {
+            totalWeight += suitcase.totalWeight();
+        }
+        
+        return totalWeight;
+    }
