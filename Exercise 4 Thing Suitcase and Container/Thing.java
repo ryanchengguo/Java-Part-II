@@ -10,3 +10,7 @@ public class Thing {
     public String getName() {
         return name;
     }
+
+    public int getWeight() {
+        return weight;
+    }
