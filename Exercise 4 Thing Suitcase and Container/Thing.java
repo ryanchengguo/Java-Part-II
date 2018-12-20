@@ -14,3 +14,9 @@ public class Thing {
     public int getWeight() {
         return weight;
     }
+
+    @Override
+    public String toString() {
+        return name + "(" + weight + " kg)";
+    }
+}
