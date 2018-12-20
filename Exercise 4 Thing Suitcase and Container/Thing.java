@@ -6,3 +6,7 @@ public class Thing {
         this.name = name;
         this.weight = weight;
     }
+
+    public String getName() {
+        return name;
+    }
