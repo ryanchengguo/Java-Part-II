@@ -16,3 +16,7 @@ public class PromissoryNote {
             if (loans.containsKey(whose)) {
                    return loans.get(whose);
         }
+
+            return 0;
+    }
+}
