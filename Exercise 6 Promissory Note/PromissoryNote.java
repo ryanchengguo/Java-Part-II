@@ -9,3 +9,4 @@ public class PromissoryNote {
 
       public void setLoan(String toWhom, double value) {
         loans.put(toWhom, value);
+    }
