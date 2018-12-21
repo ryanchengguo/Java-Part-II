@@ -6,3 +6,6 @@ public class PromissoryNote {
       public PromissoryNote() {
         loans = new HashMap<String, Double>();
     }
+
+      public void setLoan(String toWhom, double value) {
+        loans.put(toWhom, value);
