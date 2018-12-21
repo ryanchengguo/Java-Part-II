@@ -14,3 +14,5 @@ public class PromissoryNote {
       public double howMuchIsTheDebt(String whose) {
 
             if (loans.containsKey(whose)) {
+                   return loans.get(whose);
+        }
