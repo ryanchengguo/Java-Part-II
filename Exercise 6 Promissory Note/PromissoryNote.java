@@ -1,4 +1,1 @@
-
-public class Smileys {
-
-}
+import java.util.HashMap;
