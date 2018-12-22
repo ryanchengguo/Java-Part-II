@@ -15,3 +15,11 @@ public class Dictionary {
         
         return null;
     }
+
+    public void add(String word, String translation) {
+        dictionary.put(word, translation);
+    }
+    
+    public int amountOfWords() {
+        return dictionary.size();
+    }
