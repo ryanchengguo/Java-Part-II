@@ -37,3 +37,7 @@ public class TextUserInterface {
             }
         }
     }
+
+     public void add(String word, String translation) {
+        dictionary.add(word, translation);
+    }
