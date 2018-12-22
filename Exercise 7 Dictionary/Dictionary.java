@@ -7,3 +7,11 @@ public class Dictionary {
     public Dictionary() {
         dictionary = new HashMap<String, String>();
     }
+
+    public String translate(String word) {
+        if (dictionary.containsKey(word)) {
+            return dictionary.get(word);
+        }
+        
+        return null;
+    }
