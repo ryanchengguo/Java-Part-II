@@ -23,3 +23,14 @@ public class Dictionary {
     public int amountOfWords() {
         return dictionary.size();
     }
+
+    public ArrayList<String> translationList() {
+        ArrayList<String> list = new ArrayList<String>();
+        
+        for (String key : dictionary.keySet()) {
+            list.add(key + " = " + dictionary.get(key));
+        }
+        
+        return list;
+    }
+}
