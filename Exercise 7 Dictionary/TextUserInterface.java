@@ -12,3 +12,9 @@ public class TextUserInterface {
     public void start() {
         System.out.println("Statement:");
         System.out.println("  quit - quit the text user interface\n");
+
+        while (true) {
+            String input = reader.nextLine();
+            if (input.equals("quit")) {
+                System.out.println("Cheers!");
+                break;
