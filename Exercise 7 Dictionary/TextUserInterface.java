@@ -31,3 +31,9 @@ public class TextUserInterface {
                 System.out.print("Give a word: ");
                 String word = reader.nextLine();
                 System.out.println("Translation: " + translate(word));
+
+                } else {
+                System.out.println("Unknown statement\n");
+            }
+        }
+    }
