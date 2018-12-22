@@ -26,3 +26,8 @@ public class TextUserInterface {
                 String translation = reader.nextLine();
                 
                 add(word, translation);
+
+                } else if (input.equals("translate")) {
+                System.out.print("Give a word: ");
+                String word = reader.nextLine();
+                System.out.println("Translation: " + translate(word));
