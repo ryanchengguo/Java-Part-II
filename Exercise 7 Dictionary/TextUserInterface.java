@@ -18,3 +18,11 @@ public class TextUserInterface {
             if (input.equals("quit")) {
                 System.out.println("Cheers!");
                 break;
+
+                } else if (input.equals("add")) {
+                System.out.print("In Finnish: ");
+                String word = reader.nextLine();
+                System.out.print("Translation: ");
+                String translation = reader.nextLine();
+                
+                add(word, translation);
