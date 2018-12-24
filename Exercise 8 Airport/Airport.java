@@ -23,3 +23,9 @@ public class Airport {
             }
         }
     }
+
+    public void printPlanes() {
+        for (Plane p : planes) {
+            System.out.println(p);
+        }
+    }
