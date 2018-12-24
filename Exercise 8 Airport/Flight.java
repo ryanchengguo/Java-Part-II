@@ -6,3 +6,8 @@ public class Flight {
         this.departureCode = departureCode;
         this.destinationCode = destinationCode;
     }
+
+    public String toString() {
+        return "(" + departureCode + "-" + destinationCode + ")";
+    }
+}
