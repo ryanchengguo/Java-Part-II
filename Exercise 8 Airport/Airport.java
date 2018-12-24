@@ -9,3 +9,17 @@ public class Airport {
         planes = new ArrayList<Plane>();
         flights = new HashMap<Plane, Flight>();
     }
+
+    public void addPlane(String planeID, int capacity) {
+        planes.add(new Plane(planeID, capacity));
+    }
+    
+    public void addFlight(String planeID, Flight flight) {
+        for (Plane p : planes) {
+            if (p.getPlaneID().equals(planeID)) {
+                Plane plane = new Plane(p.getPlaneID(), p.getCapacity());
+                flights.put(plane, flight);
+                break;
+            }
+        }
+    }
