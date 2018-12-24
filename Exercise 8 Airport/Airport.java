@@ -35,3 +35,12 @@ public class Airport {
             System.out.println(p + " " + flights.get(p));
         }
     }
+
+    public void printPlaneInfo(String planeID) {
+        for (Plane p : planes) {
+            if (p.getPlaneID().equals(planeID)) {
+                System.out.println(p);
+            }
+        }
+    }
+}
