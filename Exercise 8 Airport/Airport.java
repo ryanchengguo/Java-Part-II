@@ -29,3 +29,9 @@ public class Airport {
             System.out.println(p);
         }
     }
+
+    public void printFlights() {
+        for (Plane p : flights.keySet()) {
+            System.out.println(p + " " + flights.get(p));
+        }
+    }
