@@ -1,4 +1,3 @@
-
-public class Smileys {
-
-}
+public class Flight {
+    private String departureCode;
+    private String destinationCode;
