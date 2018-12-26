@@ -10,3 +10,11 @@ public class Main {
                    "HA-LOL\n" + "BAL\n" + "HEL\n" +
                     "x\n" + "1\n" + "2\n" + "3\n" +
                     "G-OWAC\n" + "x";
+
+        Scanner reader = new Scanner(System.in);
+        Airport airport = new Airport();
+        TextUserInterface ui = new TextUserInterface(reader, airport);
+        
+        ui.start();
+    }
+}
