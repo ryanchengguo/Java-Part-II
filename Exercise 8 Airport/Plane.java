@@ -10,3 +10,13 @@ public class Plane {
     public String getPlaneID() {
         return planeID;
     }
+
+    public int getCapacity() {
+        return capacity;
+    }
+    
+    @Override
+    public String toString() {
+        return planeID + " (" + capacity + " ppl)";
+    }
+}
