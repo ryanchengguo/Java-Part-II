@@ -8,3 +8,10 @@ public class TextUserInterface {
         this.reader = reader;
         this.airport = airport;
     }
+
+    public void listAirportOperations() {
+        System.out.println("[1] Add airplane");
+        System.out.println("[2] Add flight");
+        System.out.println("[x] Exit");
+        System.out.print("> ");
+    }
