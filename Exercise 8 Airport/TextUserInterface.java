@@ -1,4 +1,5 @@
+import java.util.Scanner;
 
-public class Smileys {
-
-}
+public class TextUserInterface {
+    private Scanner reader;
+    private Airport airport;
