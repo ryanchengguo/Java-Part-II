@@ -15,3 +15,11 @@ public class TextUserInterface {
         System.out.println("[x] Exit");
         System.out.print("> ");
     }
+
+    public void listFlightServices() {
+        System.out.println("[1] Print planes");
+        System.out.println("[2] Print flights");
+        System.out.println("[3] Print plane info");
+        System.out.println("[x] Quit");
+        System.out.print("> ");
+    }
