@@ -27,3 +27,17 @@ public class TextUserInterface {
     public void displayAirportPanel() {
         System.out.println("Airport panel");
         System.out.println("--------------------\n");
+
+        while (true) {
+            System.out.println("Choose operation:");
+            listAirportOperations();
+            String input = reader.nextLine();
+            if (input.equals("1")) {
+                addPlane();
+            } else if (input.equals("2")) {
+                addFlight();
+            } else if (input.equals("x")) {
+                break;
+            }
+        }
+    }
