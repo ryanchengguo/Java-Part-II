@@ -23,3 +23,7 @@ public class TextUserInterface {
         System.out.println("[x] Quit");
         System.out.print("> ");
     }
+
+    public void displayAirportPanel() {
+        System.out.println("Airport panel");
+        System.out.println("--------------------\n");
