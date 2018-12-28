@@ -41,3 +41,7 @@ public class TextUserInterface {
             }
         }
     }
+    
+    public void displayFlightService() {
+        System.out.println("Flight service");
+        System.out.println("------------\n");
