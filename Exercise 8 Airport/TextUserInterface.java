@@ -45,3 +45,19 @@ public class TextUserInterface {
     public void displayFlightService() {
         System.out.println("Flight service");
         System.out.println("------------\n");
+        while (true) {
+            System.out.println("Choose operation:");
+            listFlightServices();
+            String input = reader.nextLine();
+            if (input.equals("1")) {
+                airport.printPlanes();
+            } else if (input.equals("2")) {
+                airport.printFlights();
+            } else if (input.equals("3")) {
+                System.out.print("Give plane ID: ");
+                airport.printPlaneInfo(reader.nextLine());
+            } else if (input.equals("x")) {
+                break;
+            }
+        }
+    }
