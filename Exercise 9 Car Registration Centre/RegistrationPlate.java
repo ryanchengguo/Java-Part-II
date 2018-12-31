@@ -14,3 +14,11 @@ public class RegistrationPlate {
     public String toString() {
         return country + " " + regCode;
     }
+
+    @Override
+    public int hashCode() {
+        int hash = 3;
+        hash = 43 * hash + (this.regCode != null ? this.regCode.hashCode() : 0);
+        hash = 43 * hash + (this.country != null ? this.country.hashCode() : 0);
+        return hash;
+    }
