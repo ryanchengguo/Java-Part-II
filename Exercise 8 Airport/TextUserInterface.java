@@ -61,3 +61,12 @@ public class TextUserInterface {
             }
         }
     }
+    
+    public void addPlane() {
+        System.out.print("Give plane ID: ");
+        String planeID = reader.nextLine();
+        System.out.print("Give plane capacity: ");
+        int capacity = Integer.parseInt(reader.nextLine());
+        
+        airport.addPlane(planeID, capacity);
+    }
