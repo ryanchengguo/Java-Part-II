@@ -9,3 +9,8 @@ public class RegistrationPlate {
         this.regCode = regCode;
         this.country = country;
     }
+
+    @Override
+    public String toString() {
+        return country + " " + regCode;
+    }
