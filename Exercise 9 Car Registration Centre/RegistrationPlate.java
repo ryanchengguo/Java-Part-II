@@ -22,3 +22,9 @@ public class RegistrationPlate {
         hash = 43 * hash + (this.country != null ? this.country.hashCode() : 0);
         return hash;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
