@@ -70,3 +70,14 @@ public class TextUserInterface {
         
         airport.addPlane(planeID, capacity);
     }
+    
+    public void addFlight() {
+        System.out.print("Give plane ID: ");
+        String planeID = reader.nextLine();
+        System.out.print("Give departure airport code: ");
+        String departureCode = reader.nextLine();
+        System.out.print("Give destination airport code: ");
+        String destinationCode = reader.nextLine();
+        
+        airport.addFlight(planeID, new Flight(departureCode, destinationCode));
+    }
