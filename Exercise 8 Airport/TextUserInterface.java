@@ -81,3 +81,9 @@ public class TextUserInterface {
         
         airport.addFlight(planeID, new Flight(departureCode, destinationCode));
     }
+    
+    public void start() {
+        displayAirportPanel();
+        displayFlightService();
+    }
+}
