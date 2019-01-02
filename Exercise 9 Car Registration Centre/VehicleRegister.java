@@ -36,3 +36,9 @@ public class VehicleRegister {
         
         return true;
     }
+    
+    public void printRegistrationPlates() {
+        for (RegistrationPlate plate : owners.keySet()) {
+            System.out.println(plate);
+        }
+    }
