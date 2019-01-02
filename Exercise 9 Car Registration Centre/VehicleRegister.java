@@ -26,3 +26,13 @@ public class VehicleRegister {
         
         return owners.get(plate);
     }
+
+    public boolean delete(RegistrationPlate plate) {
+        if (!owners.containsKey(plate)) {
+            return false;
+        }
+        
+        owners.remove(plate);
+        
+        return true;
+    }
