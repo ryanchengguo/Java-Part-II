@@ -18,3 +18,11 @@ public class VehicleRegister {
         
         return true;
     }
+
+    public String get(RegistrationPlate plate) {
+        if (!owners.containsKey(plate)) {
+            return null;
+        }
+        
+        return owners.get(plate);
+    }
