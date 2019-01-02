@@ -42,3 +42,12 @@ public class VehicleRegister {
             System.out.println(plate);
         }
     }
+    
+     public void printOwners() {
+        Set<String> ownerSet = new HashSet<String>(owners.values());
+        
+        for (String owner : ownerSet) {
+            System.out.println(owner);
+        }
+    }
+}
