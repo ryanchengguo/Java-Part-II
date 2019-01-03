@@ -9,3 +9,11 @@ public class CivilService implements NationalService {
     public int getDaysLeft() {
         return daysLeft;
     }
+
+    @Override
+    public void work() {
+        if (daysLeft > 0) {
+            daysLeft--;
+        }
+    }
+}
