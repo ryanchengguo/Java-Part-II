@@ -8,3 +8,13 @@ public class Box implements ToBeStored {
         this.things = new ArrayList<ToBeStored>();
         this.maxWeight = maxWeight;
     }
+
+    public double weight() {
+        double totalWeight = 0;
+        
+        for (ToBeStored thing : things) {
+            totalWeight += thing.weight();
+        }
+        
+        return totalWeight;
+    }
