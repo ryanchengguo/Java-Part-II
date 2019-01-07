@@ -24,3 +24,9 @@ public class Box implements ToBeStored {
             things.add(object);
         }
     }
+
+    @Override
+    public String toString() {
+        return "Box: " + things.size() + " things, total weight " + weight() + " kg";
+    }
+}
