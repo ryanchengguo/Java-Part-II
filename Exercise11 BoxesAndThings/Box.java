@@ -18,3 +18,9 @@ public class Box implements ToBeStored {
         
         return totalWeight;
     }
+
+    public void add(ToBeStored object) {
+        if (weight() + object.weight() <= maxWeight) {
+            things.add(object);
+        }
+    }
