@@ -10,3 +10,7 @@ public class CD implements ToBeStored {
         this.publishingYear = publishingYear;
         this.weight = 0.1;
     }
+
+    public double weight() {
+        return weight;
+    }
