@@ -1,4 +1,3 @@
-
-public class Smileys {
-
+public interface ToBeStored {
+    double weight();
 }
