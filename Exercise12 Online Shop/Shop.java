@@ -31,3 +31,9 @@ public class Shop {
                 basket.add(product, store.price(product));
             }
         }
+        
+        System.out.println("your purchases are:");
+        basket.print();
+        System.out.println("basket price: " + basket.price());
+    }
+}
