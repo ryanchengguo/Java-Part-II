@@ -8,3 +8,13 @@ public class Shop {
         this.store = store;
         this.reader = reader;
     }
+
+    // The method to deal with a customer in the shop
+    public void manage(String customer) {
+        ShoppingBasket basket = new ShoppingBasket();
+        System.out.println("Welcome to our shop " + customer);
+        System.out.println("below is our sale offer:");
+
+        for (String product : store.products()) {
+            System.out.println( product );
+        }
