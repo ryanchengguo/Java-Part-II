@@ -18,3 +18,16 @@ public class Shop {
         for (String product : store.products()) {
             System.out.println( product );
         }
+
+        while (true) {
+            System.out.print("what do you want to buy (press enter to pay):");
+            String product = reader.nextLine();
+            if (product.isEmpty()) {
+                break;
+            }
+            
+            if (store.stock(product) > 0) {
+                store.take(product);
+                basket.add(product, store.price(product));
+            }
+        }
