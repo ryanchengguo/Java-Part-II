@@ -16,3 +16,8 @@ public class Purchase {
     public void increaseAmount() {
         amount++;
     }
+
+     public String toString() {
+        return product + ": " + amount;
+    }
+}
