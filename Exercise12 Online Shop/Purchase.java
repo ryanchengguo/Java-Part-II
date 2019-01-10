@@ -8,3 +8,11 @@ public class Purchase {
         this.amount = amount;
         this.unitPrice = unitPrice;
     }
+
+    public int price() {
+        return amount * unitPrice;
+    }
+    
+    public void increaseAmount() {
+        amount++;
+    }
