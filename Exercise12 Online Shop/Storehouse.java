@@ -23,3 +23,11 @@ public class Storehouse {
         
         return -99;
     }
+
+    public int stock(String product) {
+        if (productStock.containsKey(product)) {
+            return productStock.get(product);
+        }
+        
+        return 0;
+    }
