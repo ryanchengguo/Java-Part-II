@@ -7,3 +7,11 @@ public class ShoppingBasket {
     public ShoppingBasket() {
         purchases = new HashMap<String, Purchase>();
     }
+
+    public void add(String product, int price) {
+        if (purchases.containsKey(product)) {
+            purchases.get(product).increaseAmount();
+        } else {
+            purchases.put(product, new Purchase(product, 1, price));
+        }
+    }
