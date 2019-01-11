@@ -31,3 +31,17 @@ public class Storehouse {
         
         return 0;
     }
+
+    public boolean take(String product) {
+        if (productStock.containsKey(product) && productStock.get(product) > 0) {
+            productStock.put(product, productStock.get(product) - 1);
+            return true;
+        }
+        
+        return false;
+    }
+    
+    public Set<String> products() {
+        return productPrices.keySet();
+    }
+}
