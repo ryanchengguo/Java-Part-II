@@ -10,3 +10,8 @@ public class Storehouse {
         productPrices = new HashMap<String, Integer>();
         productStock = new HashMap<String, Integer>();
     }
+
+    public void addProduct(String product, int price, int stock) {
+        productPrices.put(product, price);
+        productStock.put(product, stock);
+    }
