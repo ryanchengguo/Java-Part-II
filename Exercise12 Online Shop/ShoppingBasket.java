@@ -15,3 +15,13 @@ public class ShoppingBasket {
             purchases.put(product, new Purchase(product, 1, price));
         }
     }
+
+    public int price() {
+        int total = 0;
+        
+        for (Purchase p : purchases.values()) {
+            total += p.price();
+        }
+        
+        return total;
+    }
