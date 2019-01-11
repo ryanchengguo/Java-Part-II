@@ -15,3 +15,11 @@ public class Storehouse {
         productPrices.put(product, price);
         productStock.put(product, stock);
     }
+
+    public int price(String product) {
+        if (productPrices.containsKey(product)) {
+            return productPrices.get(product);
+        }
+        
+        return -99;
+    }
