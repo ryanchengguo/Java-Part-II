@@ -25,3 +25,10 @@ public class ShoppingBasket {
         
         return total;
     }
+
+    public void print() {
+        for (Purchase p : purchases.values()) {
+            System.out.println(p);
+        }
+    }
+}
