@@ -14,3 +14,6 @@ public class Person implements Comparable<Person> {
 
     public int getSalary() {
         return salary;
+    }
+    
+    @Override
