@@ -20,3 +20,6 @@ public class Person implements Comparable<Person> {
     public int compareTo(Person person) {
         return person.salary - this.salary;
     }
+
+    @Override
+    public String toString() {
