@@ -7,3 +7,7 @@ public class Person implements Comparable<Person> {
         this.name = name;
         this.salary = salary;
     }
+
+    public String getName() {
+        return name;
+    }
