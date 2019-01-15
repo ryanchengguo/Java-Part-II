@@ -14,3 +14,9 @@ public class Student implements Comparable<Student>{
     public String toString() {
         return name;
     }
+
+     @Override
+    public int compareTo(Student student) {
+        return this.getName().compareToIgnoreCase(student.getName());
+    }
+}
