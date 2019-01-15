@@ -1,4 +1,7 @@
+public class Student implements Comparable<Student>{
 
-public class Smileys {
+    private String name;
 
-}
+    public Student(String name) {
+        this.name = name;
+    }
