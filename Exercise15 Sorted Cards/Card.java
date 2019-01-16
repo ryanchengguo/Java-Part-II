@@ -28,3 +28,7 @@ public class Card implements Comparable<Card> {
     public String toString() {
         return VALUES[value] + " of " + SUITS[suit];
     }
+
+    public int getValue() {
+        return value;
+    }
