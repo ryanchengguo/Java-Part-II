@@ -1,7 +1,10 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Random;
 
-public class HelloWorld {
-	public static void main(String [ ] args){
-		System.out.println("Hello world!");
-	}
-	
-}
+public class Points {
+
+    private Random random;
+    private int length;
+    private List<Integer> votes;
