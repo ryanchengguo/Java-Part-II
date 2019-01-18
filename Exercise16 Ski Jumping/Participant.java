@@ -40,3 +40,16 @@ public class Participant implements Comparable<Participant> {
         
         System.out.println(roundPoints.getLength());
     }
+    
+     public void printLengths() {
+        int nPoints = points.size();
+        
+        for (int i = 1; i <= nPoints; i++) {
+            Points roundPoints = points.get(i);
+            if (i < nPoints) {
+                System.out.print(roundPoints.getLength() + " m, ");
+            } else {
+                System.out.println(roundPoints.getLength() + " m");
+            }
+        }
+    }
