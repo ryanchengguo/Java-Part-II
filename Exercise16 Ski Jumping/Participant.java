@@ -29,3 +29,14 @@ public class Participant implements Comparable<Participant> {
         
         return total;
     }
+
+     @Override
+    public int compareTo(Participant other) {
+        return this.totalScore() - other.totalScore();
+    }
+    
+    public void printRoundLength(int round) {
+        Points roundPoints = points.get(round);
+        
+        System.out.println(roundPoints.getLength());
+    }
