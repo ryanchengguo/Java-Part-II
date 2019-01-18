@@ -53,3 +53,14 @@ public class Participant implements Comparable<Participant> {
             }
         }
     }
+
+     public void printJumpResults(int round) {
+        Points roundPoints = points.get(round);
+        
+        System.out.println("  " + name);
+        System.out.println("    length: " + roundPoints.getLength());
+        System.out.print("    judge votes: ");
+        roundPoints.printVotes();
+        System.out.println();
+    }
+}
