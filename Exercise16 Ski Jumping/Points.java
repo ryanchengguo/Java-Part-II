@@ -28,3 +28,11 @@ public class Points {
             votes.add(random.nextInt(11) + 10);
         }
     }
+
+    public void printVotes() {
+        System.out.print("[");
+        for (int i = 0; i < 4; i++) {
+            System.out.print(votes.get(i) + ", ");
+        }
+        System.out.print(votes.get(4) + "]");
+    }
