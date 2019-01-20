@@ -21,3 +21,10 @@ public class Points {
     public int getLength() {
         return length;
     }
+
+    private void generateVotes() {
+        for (int i = 0; i < 5; i++) {
+            // Random int between 10 - 20
+            votes.add(random.nextInt(11) + 10);
+        }
+    }
