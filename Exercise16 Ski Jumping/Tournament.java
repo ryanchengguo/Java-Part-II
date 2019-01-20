@@ -28,3 +28,11 @@ public class Tournament {
         printRoundResults();
         roundNum++;
     }
+
+    public int getRound() {
+        return roundNum;
+    }
+    
+    public void sortParticipants() {
+        Collections.sort(participants);
+    }
