@@ -17,3 +17,7 @@ public class Points {
         this.votes = new ArrayList<Integer>();
         generateVotes();
     }
+
+    public int getLength() {
+        return length;
+    }
