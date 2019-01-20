@@ -47,3 +47,11 @@ public class Tournament {
             count++;
         }
     }
+    
+    public void printRoundResults() {
+        System.out.println("\nResults of round " + roundNum);
+        
+        for (Participant p : participants) {
+            p.printJumpResults(roundNum);
+        }
+    }
