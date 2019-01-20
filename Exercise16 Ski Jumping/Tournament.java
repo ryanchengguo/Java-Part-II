@@ -36,3 +36,14 @@ public class Tournament {
     public void sortParticipants() {
         Collections.sort(participants);
     }
+    
+    public void printJumpOrder() {
+        sortParticipants();
+        
+        int count = 1;
+        for (Participant p : participants) {
+            System.out.println("  " + count + ". " + p.getName() + " (" 
+                    + p.totalScore() + " points)");
+            count++;
+        }
+    }
