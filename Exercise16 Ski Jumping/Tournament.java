@@ -55,3 +55,20 @@ public class Tournament {
             p.printJumpResults(roundNum);
         }
     }
+    
+    public void printFinalResults() {
+        // Sort by descending
+        Collections.sort(participants);
+        Collections.reverse(participants);
+        
+        System.out.println("Position    Name");
+        for (int i = 0; i < participants.size(); i++) {
+            Participant p = participants.get(i);
+            
+            System.out.println((i + 1) + "           " + p.getName() + " (" 
+                    + p.totalScore() + " points)");
+            System.out.print("            jump lengths: ");
+            p.printLengths();
+        }
+    }
+}
