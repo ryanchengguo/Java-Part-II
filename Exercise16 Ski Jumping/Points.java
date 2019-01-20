@@ -36,3 +36,15 @@ public class Points {
         }
         System.out.print(votes.get(4) + "]");
     }
+
+    public int calculateScore() {
+        int total = 0;
+        
+        Collections.sort(votes);
+        for (int i = 1; i < votes.size() - 1; i++) {
+            total += votes.get(i);
+        }
+        
+        return total + length;
+    }
+}
