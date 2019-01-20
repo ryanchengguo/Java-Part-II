@@ -17,3 +17,14 @@ public class Tournament {
     public void addParticipant(String name) {
         participants.add(new Participant(name));
     }
+
+    public void playRound() {
+        printJumpOrder();
+        
+        for (Participant p : participants) {
+            p.jump(roundNum);
+        }
+        
+        printRoundResults();
+        roundNum++;
+    }
