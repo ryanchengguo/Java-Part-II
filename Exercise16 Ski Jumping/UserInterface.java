@@ -6,3 +6,8 @@ public class UserInterface {
 
     private Scanner reader;
     private Tournament tournament;
+
+    public UserInterface() {
+        reader = new Scanner(System.in);
+        tournament = new Tournament();
+    }
