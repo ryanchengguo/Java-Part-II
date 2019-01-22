@@ -33,3 +33,19 @@ public class UserInterface {
             tournament.addParticipant(name);
         }
     }
+
+    public void playTournament() {        
+        System.out.println("\nThe tournament begins!");
+        
+        while (true) {
+            System.out.print("\nWrite \"jump\" to jump; otherwise you quit: ");
+            String userInput = reader.nextLine();
+
+            if (userInput.equals("jump")) {
+                System.out.println("\nRound " + tournament.getRound() + "\n");
+                System.out.println("Jumping order:");
+                tournament.playRound();
+            } else {
+                break;
+            }
+        }
