@@ -17,3 +17,7 @@ public class UserInterface {
         addParticipants();
         playTournament();
     }
+
+    public void addParticipants() {
+        System.out.println("Write the names of the participants one at a time; "
+                + "an empty string brings you to the jumping phase.");
