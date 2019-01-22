@@ -21,3 +21,15 @@ public class UserInterface {
     public void addParticipants() {
         System.out.println("Write the names of the participants one at a time; "
                 + "an empty string brings you to the jumping phase.");
+
+        while (true) {
+            System.out.print("  Participant name: ");
+            String name = reader.nextLine();
+            
+            if (name.isEmpty()) {
+                break;
+            }
+            
+            tournament.addParticipant(name);
+        }
+    }
