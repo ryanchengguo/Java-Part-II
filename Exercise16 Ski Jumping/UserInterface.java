@@ -11,3 +11,9 @@ public class UserInterface {
         reader = new Scanner(System.in);
         tournament = new Tournament();
     }
+
+    public void start() {
+        System.out.println("Kumpula ski jumping week\n");
+        addParticipants();
+        playTournament();
+    }
