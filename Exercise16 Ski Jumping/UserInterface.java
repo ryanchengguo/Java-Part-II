@@ -49,3 +49,13 @@ public class UserInterface {
                 break;
             }
         }
+
+        endTournament();
+    }
+    
+    public void endTournament() {
+        System.out.println("\nThanks!\n");
+        System.out.println("Tournament results:");
+        tournament.printFinalResults();
+    }
+}
