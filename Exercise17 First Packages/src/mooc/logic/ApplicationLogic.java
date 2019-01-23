@@ -1,4 +1,3 @@
+package mooc.logic;
 
-public class Smileys {
-
-}
+import mooc.ui.UserInterface;
