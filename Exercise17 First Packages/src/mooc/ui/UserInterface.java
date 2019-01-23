@@ -1,4 +1,1 @@
-
-public class Smileys {
-
-}
+package mooc.ui;
