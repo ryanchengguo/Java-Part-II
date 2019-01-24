@@ -1,4 +1,6 @@
+package moving.logic;
 
-public class Smileys {
-
-}
+import java.util.ArrayList;
+import java.util.List;
+import moving.domain.Box;
+import moving.domain.Thing;
