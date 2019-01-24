@@ -1,4 +1,6 @@
+package moving.domain;
 
-public class Smileys {
+public interface Thing {
 
+    int getVolume();
 }
