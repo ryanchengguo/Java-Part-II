@@ -1,4 +1,4 @@
+package moving.domain;
 
-public class Smileys {
-
-}
+import java.util.ArrayList;
+import java.util.List;
