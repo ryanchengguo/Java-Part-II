@@ -22,3 +22,15 @@ public class Box implements Thing {
         
         return true;
     }
+
+    @Override
+    public int getVolume() {
+        int volume = 0;
+        
+        for (Thing t : things) {
+            volume += t.getVolume();
+        }
+        
+        return volume;
+    }
+}
