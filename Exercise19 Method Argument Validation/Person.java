@@ -1,4 +1,6 @@
+package validation;
 
-public class Smileys {
+public class Person {
 
-}
+    private String name;
+    private int age;
