@@ -14,3 +14,8 @@ public class Calculator {
 
         return multiplication;
     }
+
+    public int binomialCoefficient(int setSize, int subsetSize) {
+        if (setSize < 0 || subsetSize < 0 || subsetSize > setSize) {
+            throw new IllegalArgumentException();
+        }
