@@ -19,3 +19,10 @@ public class Calculator {
         if (setSize < 0 || subsetSize < 0 || subsetSize > setSize) {
             throw new IllegalArgumentException();
         }
+
+        int numerator = multiplication(setSize);
+        int denominator = multiplication(subsetSize) * multiplication(setSize - subsetSize);
+
+        return numerator / denominator;
+    }
+}
