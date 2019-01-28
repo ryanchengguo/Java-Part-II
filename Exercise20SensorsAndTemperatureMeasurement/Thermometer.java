@@ -1,4 +1,7 @@
+package application;
 
-public class Smileys {
+import java.util.Random;
 
+public class Thermometer implements Sensor {
+  
 }
