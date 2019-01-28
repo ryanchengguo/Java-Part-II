@@ -46,3 +46,9 @@ public class AverageSensor implements Sensor {
             s.off();
         }
     }
+
+    @Override
+    public int measure() {
+        if (!isOn() || sensors.size() == 0) {
+            throw new IllegalStateException();
+        }
