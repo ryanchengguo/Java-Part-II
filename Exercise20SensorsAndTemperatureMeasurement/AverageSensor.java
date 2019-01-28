@@ -20,3 +20,15 @@ public class AverageSensor implements Sensor {
     public List<Integer> readings() {
         return readings;
     }
+
+    @Override
+    public boolean isOn() {
+        for (Sensor s : sensors) {
+            if (!s.isOn()) {
+                return false;
+            }
+        }
+        
+        return true;
+    }
+
