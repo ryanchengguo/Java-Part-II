@@ -58,3 +58,10 @@ public class AverageSensor implements Sensor {
         for (Sensor s : sensors) {
             total += s.measure();
         }
+        
+        int average = total / sensors.size();
+        readings.add(average);
+        
+        return average;
+    }
+}
