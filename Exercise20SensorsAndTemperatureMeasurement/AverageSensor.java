@@ -12,3 +12,11 @@ public class AverageSensor implements Sensor {
         sensors = new ArrayList<Sensor>();
         readings = new ArrayList<Integer>();
     }
+
+    public void addSensor(Sensor additional) {
+        sensors.add(additional);
+    }
+    
+    public List<Integer> readings() {
+        return readings;
+    }
