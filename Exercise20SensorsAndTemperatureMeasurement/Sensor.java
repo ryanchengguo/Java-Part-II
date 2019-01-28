@@ -1,4 +1,10 @@
+package application;
 
-public class Smileys {
-
+public interface Sensor {
+  
+    boolean isOn();  
+    void on();      
+    void off();      
+    int measure();  
+                    
 }
