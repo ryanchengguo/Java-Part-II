@@ -1,4 +1,5 @@
+package application;
 
-public class Smileys {
-
+public class ConstantSensor implements Sensor {
+  
 }
