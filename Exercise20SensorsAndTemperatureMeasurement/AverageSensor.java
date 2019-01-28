@@ -52,3 +52,9 @@ public class AverageSensor implements Sensor {
         if (!isOn() || sensors.size() == 0) {
             throw new IllegalStateException();
         }
+        
+        int total = 0;
+        
+        for (Sensor s : sensors) {
+            total += s.measure();
+        }
