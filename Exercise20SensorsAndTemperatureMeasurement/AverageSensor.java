@@ -32,3 +32,10 @@ public class AverageSensor implements Sensor {
         return true;
     }
 
+
+    @Override
+    public void on() {
+        for (Sensor s : sensors) {
+            s.on();
+        }
+    }
