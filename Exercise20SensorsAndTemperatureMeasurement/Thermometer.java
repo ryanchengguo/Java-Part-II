@@ -15,4 +15,12 @@ public class Thermometer implements Sensor {
         return on;
     }
   
+    @Override
+    public void on() {
+        on = true;
+    }
+  
+  
+ 
+  
 }
