@@ -20,7 +20,10 @@ public class Thermometer implements Sensor {
         on = true;
     }
   
-  
+    @Override
+    public void off() {
+        on = false;
+    }
  
   
 }
