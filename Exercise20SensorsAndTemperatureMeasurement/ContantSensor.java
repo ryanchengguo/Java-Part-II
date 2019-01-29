@@ -7,4 +7,9 @@ public class ConstantSensor implements Sensor {
     public ConstantSensor(int reading) {
         this.reading = reading;
     }
+  
+    @Override
+    public boolean isOn() { 
+        return true;
+    }
 }
