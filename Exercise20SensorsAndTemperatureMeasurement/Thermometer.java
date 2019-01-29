@@ -25,5 +25,14 @@ public class Thermometer implements Sensor {
         on = false;
     }
  
+    @Override
+    public int measure() {
+        if (on) {
+            Random random = new Random();
+            return random.nextInt(61) - 30;
+        } else {
+            throw new IllegalStateException();
+        }
+    }
   
 }
