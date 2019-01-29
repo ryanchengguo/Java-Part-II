@@ -12,4 +12,7 @@ public class ConstantSensor implements Sensor {
     public boolean isOn() { 
         return true;
     }
+  
+    @Override
+    public void on() { }
 }
