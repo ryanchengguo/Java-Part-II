@@ -18,4 +18,9 @@ public class ConstantSensor implements Sensor {
   
     @Override
     public void off() { }
+  
+    @Override
+    public int measure() {
+        return reading;
+    }
 }
