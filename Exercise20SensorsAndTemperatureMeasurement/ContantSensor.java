@@ -15,4 +15,7 @@ public class ConstantSensor implements Sensor {
   
     @Override
     public void on() { }
+  
+    @Override
+    public void off() { }
 }
