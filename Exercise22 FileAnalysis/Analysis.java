@@ -32,3 +32,7 @@ public class Analysis {
             String line = reader.nextLine();
             nChars += line.length() + 1;  // +1 for line breaks
         }
+
+        return nChars;
+    }
+}
