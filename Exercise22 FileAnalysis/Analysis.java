@@ -23,3 +23,7 @@ public class Analysis {
         
         return nLines;
     }
+
+    public int characters() throws Exception {
+        Scanner reader = new Scanner(file, "UTF-8");
+        int nChars = 0;
