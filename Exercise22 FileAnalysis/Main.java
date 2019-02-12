@@ -1,4 +1,3 @@
+package file;
 
-public class Smileys {
-
-}
+import java.io.File;
